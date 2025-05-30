@@ -7,13 +7,13 @@ const PrintCards = () => {
     const [students, setStudents] = useState([]);
     const [isPrintButtonEnabled, setIsPrintButtonEnabled] = useState(false);
 
-    console.log(students);
-    students.forEach((student) => {
-        console.log("#####################", student.subjects);
-        console.log(student.marksScored);
-        console.log(student.totalMarks);
+    // console.log(students);
+    // students.forEach((student) => {
+    //     console.log("#####################", student.subjects);
+    //     console.log(student.marksScored);
+    //     console.log(student.totalMarks);
 
-    })
+    // })
 
     useEffect(() => {
         const fetchClasses = async () => {
