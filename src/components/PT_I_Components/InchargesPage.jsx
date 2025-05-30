@@ -22,7 +22,7 @@ const InchargesPage = () => {
         };
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/pt/createClass`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}api/v1/pt/createClass`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
