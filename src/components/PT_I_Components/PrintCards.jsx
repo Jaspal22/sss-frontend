@@ -7,6 +7,8 @@ const PrintCards = () => {
     const [students, setStudents] = useState([]);
     const [isPrintButtonEnabled, setIsPrintButtonEnabled] = useState(false);
 
+    console.log(classes);
+
     // console.log(students);
     // students.forEach((student) => {
     //     console.log("#####################", student.subjects);
