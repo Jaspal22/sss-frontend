@@ -6,7 +6,7 @@ const PTpage = () => {
         <div className="container mx-auto p-4">
             <section className="section bg-gray-100 rounded-lg shadow-md mb-4 p-6 border border-gray-300">
                 <h2 className="text-2xl text-gray-800 font-semibold mb-3">Incharge</h2>
-                <Link to="/incharges-page" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Perform Action</Link>
+{/*                 <Link to="/incharges-page" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Perform Action</Link> */}
             </section>
             <section className="section bg-gray-100 rounded-lg shadow-md mb-4 p-6 border border-gray-300">
                 <h2 className="text-2xl text-gray-800 font-semibold mb-3">Upload Marks</h2>
