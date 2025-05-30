@@ -20,7 +20,7 @@ const PrintCards = () => {
     useEffect(() => {
         const fetchClasses = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/pt/fetchAllClasses`);
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}api/v1/pt/fetchAllClasses`);
                 setClasses(response.data);
             } catch (error) {
                 console.error('Error fetching classes:', error);
@@ -35,7 +35,7 @@ const PrintCards = () => {
         setSelectedClass(className);
 
         try {
-            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/pt/fetchAllClassStudents`, { className });
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}api/v1/pt/fetchAllClassStudents`, { className });
             setStudents(response.data);
             setIsPrintButtonEnabled(response.data.length > 0);
         } catch (error) {
