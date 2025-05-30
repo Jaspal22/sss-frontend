@@ -93,7 +93,7 @@ const UploadMarks = () => {
                 overallPercentage: percentage,
             };
 
-            await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/pt/addMarks`, payload);
+            await axios.post(`${import.meta.env.VITE_BACKEND_URL}api/v1/pt/addMarks`, payload);
             toast.success('Marks uploaded successfully!');
 
             // Clear the form data
@@ -109,7 +109,7 @@ const UploadMarks = () => {
     useEffect(() => {
         const fetchClasses = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/pt/fetchAllClasses`);
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}api/v1/pt/fetchAllClasses`);
                 setClasses(response.data);
             } catch (error) {
                 console.error('Error fetching classes:', error);
@@ -123,7 +123,7 @@ const UploadMarks = () => {
         const fetchClassData = async () => {
             if (selectedClass) {
                 try {
-                    const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/pt/fetchClassData`, {
+                    const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}api/v1/pt/fetchClassData`, {
                         className: selectedClass,
                     });
                     setClassData(response.data);
